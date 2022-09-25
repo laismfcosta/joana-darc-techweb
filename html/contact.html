@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Joana D'arc</title>
+    <meta charset="utf-8" />
+    <meta name="Keywords" content="Joana d'Arc" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <script src="../js/events.js"></script>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="../images/joana-darc.png" type="image/x-icon" />
+    <link href="../css/normalize.css" rel="stylesheet" />
+    <link href="../css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container-fluid" id="columns">
+      <nav>
+        <ul>
+          <li class="link"><a href="./home.html" title="Home">Home</a></li>
+          <li class="link"><a href="../php/logout.php">Logout</a></li>
+        </ul>
+      </nav>
+      <hr />
+      <h2>Entre em contato com a gente</h2>
+      <div class="row">
+        <form role="form" action="../php/register.php" method="POST" class="form-horizontal">
+          <div class="form-group">
+            <label class="col-sm-2 control-label">Nome</label>
+            <div class="col-sm-10">
+              <input type="text" name="name" class="form-control" placeholder="Informe seu nome" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label">E-mail</label>
+            <div class="col-sm-10">
+              <input type="email" name="email" class="form-control" placeholder="Informe seu e-mail" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label">Senha</label>
+            <div class="col-sm-10">
+              <input type="password" name="password" class="form-control" maxlength="8" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label">Mensagem</label>
+            <div class="col-sm-10">
+              <textarea
+                id="message"
+                rows="6"
+                cols="40"
+                name="message"
+                class="form-control"
+                placeholder="Digite sua mensagem"
+                maxlength="200"
+                oninput="charactersCount()"
+              ></textarea>
+              <p><span id="counter">200</span> caracteres</p>
+            </div>
+          </div>
+          <div class="input-group col-sm-10 col-sm-offset-2">
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
+          </div>
+        </form>
+      </div>
+      <hr />
+      <footer>
+        <small>Copyright &copy; Laís Costa</small>
+      </footer>
+    </div>
+  </body>
+</html>

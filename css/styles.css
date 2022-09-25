@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+
+body {
+  background-color: #fffcf2;
+  color: #3d405b;
+  margin: 2em;
+  font-family: "Inter", sans-serif;
+  font-size: 14pt;
+}
+
+.container {
+  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.link {
+  display: inline-block;
+}
+
+nav a {
+  padding: 5px 1em;
+  border-radius: 5px;
+  color: #f28482;
+}
+
+nav a:hover {
+  background-color: #f28482;
+  color: white;
+}
+
+h1 {
+  padding: 5px;
+  margin: 15px;
+  font-size: 28pt;
+}
+
+nav ul {
+  text-align: right;
+}
+
+span {
+  font-size: 18pt;
+}
+
+footer {
+  text-align: center;
+}
+
+hr {
+  background-color: #f28482;
+}
+
+p {
+  text-align: center;
+}
+
+table,
+th,
+td {
+  border: medium solid #f28482;
+}
+
+th {
+  background-color: #fffcf2;
+  padding: 0.5em;
+}
+
+td {
+  background-color: #fffcf2;
+  padding: 0.5em;
+}
+
+table {
+  margin: 0 auto;
+}
+
+.btn-primary {
+  background-color: #f28482 !important;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #f27b79 !important;
+}
+
+iframe {
+  border: thick solid black;
+  border-radius: 30px;
+  box-shadow: 10px 10px 5px black;
+}
+
+.slider {
+  display: block;
+  height: 500px;
+  width: 1000px;
+  margin: auto;
+  margin-top: 20px;
+  position: relative;
+}
+
+.slider li {
+  list-style: none;
+  position: absolute;
+}
+
+.slider img {
+  margin: auto;
+  width: 100%;
+  vertical-align: top;
+
+  opacity: 0;
+  visibility: hidden;
+}
+
+.slider input {
+  display: none;
+}
+
+.slider label {
+  background-color: #f28482;
+  bottom: 10px;
+  cursor: pointer;
+  display: block;
+  height: 15px;
+  position: absolute;
+  width: 15px;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+.slider li:nth-child(1) label {
+  left: 10px;
+}
+
+.slider li:nth-child(2) label {
+  left: 40px;
+}
+
+.slider li:nth-child(3) label {
+  left: 70px;
+}
+
+.slider li input:checked ~ img {
+  opacity: 1;
+  visibility: visible;
+  z-index: 10;
+}

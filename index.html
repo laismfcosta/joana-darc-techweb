@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="../images/joana-darc.png" type="image/x-icon" />
+    <link href="./css/normalize.css" rel="stylesheet" />
+    <link href="./css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Quem foi Joana d'Arc</h1>
+      <form action="./php/login.php" method="post">
+        <p>Faça seu login</p>
+        <div class="form-group">
+          <input type="text" class="form-control" name="email" placeholder="E-mail" />
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control" name="password" placeholder="Senha" />
+        </div>
+        <div class="form-group">
+          <select class="form-control" size="1" name="profile" id="profile">
+            <option value="1">Visitante</option>
+            <option value="2">Administrador</option>
+          </select>
+        </div>
+        <p>
+          <input class="btn btn-primary" type="submit" name="submit" value="Entrar" />
+        </p>
+      </form>
+    </div>
+  </body>
+</html>
